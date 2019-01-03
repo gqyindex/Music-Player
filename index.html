@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <div class="contain" id="main">
+      <header >
+          <h3>简 易 音 乐</h3>
+          <!--<a href="#" id="login">登录</a>-->
+      </header>
+      <!--content-->
+      <div class="isroll">
+      <div class="content" style="touch-action:none">
+          <ul id="List">
+              <!--PHP通过Ajax生成动态音乐列表-->
+             <!-- <li class="active">
+                  <p>周杰伦</p>
+                  <p>最长的电影</p>
+
+              </li>-->
+          </ul>
+      </div>
+      </div>
+
+      <footer id="footer">
+          <div id="slide_up">
+          <img src="img/miaov.jpg" alt="" id="singhead">
+          <span id="musicAudio">
+                 <p>简易音乐</p>
+                 <p>简易音乐</p>
+              </span>
+          </div>
+          <img src="img/list_audioPlay.png" alt="" id="list_audioPlay">
+      </footer>
+      <audio id="player" src=""></audio>
+      <!--detail music-->
+      <div class="detail" id="music_detail">
+          <header >
+              <h3>简易音乐</h3>
+              <p>简易音乐</p>
+              <span id="slide_down"></span>
+          </header>
+          <div class="music_lyric_box">
+          <div class="music_lyric">
+              <ul id="lyric">
+                  <!--动态渲染歌词-->
+              </ul>
+
+          </div>
+          </div>
+          <div class="play">
+              <div class="move">
+              <div class="progress"></div>
+              <span class="now-time" id="now-time">00:00</span>
+              <span class="end-time" id="end-time">00:00</span>
+              <div class="progress-cover" id="progress-cover"></div>
+              <div class="progress-point" id="progress-point"></div>
+              </div>
+              <div class="audio" id="audio"></div>
+              <div class="audio-prev" id="audio-prev"></div>
+              <div class="audio-next" id="audio-next"></div>
+          </div>
+      </div>
+
+      </div>
+
+
+<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+  <!--<script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.js"></script>-->
+</body>
+</html>

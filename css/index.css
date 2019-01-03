@@ -1,0 +1,273 @@
+#main{
+    margin: 0 auto;
+}
+.contain{
+    width: 100%;
+    height:100%;
+    background:url("../img/bg.jpg") no-repeat ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.active{
+    color: #3da4c2;
+}
+header{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-color: #242424;
+    text-align: center;
+    border-bottom: 1px solid #3da4c2;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+header h3{
+    padding: 0;
+    margin: 0;
+    display:inline;
+
+}
+
+header a{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.isroll{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    bottom: 60px;
+}
+
+.content ul{
+    width: 100%;
+}
+.content li{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #142537;
+    overflow: hidden;
+    cursor: pointer;
+}
+.content li p:first-child{
+    font-size: 16px;
+    margin-left: 20px;
+
+}
+.content li p:last-child{
+    font-size: 10px;
+    margin-left: 20px;
+    color: #ccc;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url("../img/list_audioBg.png");
+}
+footer #slide_up{
+    width: 76%;
+    height: 100%;
+
+}
+
+footer img:first-child{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    margin-left: 34px;
+}
+
+footer span{
+    position: absolute;
+    bottom: 8px;
+    left: 110px;
+}
+
+footer span p:first-child{
+    font-size: 16px;
+}
+
+footer span p:last-child{
+    font-size: 10px;
+}
+footer img:last-child{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+.detail{
+    height: 640px;
+    width: 100%;
+    position: absolute;
+    top: 640px;
+    left: 0;
+}
+/*details*/
+.detail{
+    width: 100%;
+    height: 100%;
+    background: url("../img/detailsBg.jpg");
+    background-size: 100% 100%;
+}
+
+.detail header span{
+    display: block;
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    background:url("../img/details_arrow.png") no-repeat;
+    background-size: 30px 14px;
+}
+
+.detail header p{
+    position: absolute;
+    top: 2px;
+    left: 60%;
+    font-size: 8px;
+    color: #3da4c2;
+}
+.music_lyric_box{
+    width: 100%;
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+.music_lyric{
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 220px;
+    transition:top  .6s;
+    overflow: hidden;
+}
+
+#lyric{
+    width: 100%;
+}
+
+#lyric li{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.play{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    overflow: hidden;
+}
+.move{
+    height: 20px;
+}
+.progress{
+    width: 60%;
+    height: 2px;
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-left:20%;
+    position: relative;
+}
+.progress-cover{
+    width: 0%;
+    height: 2px;
+    margin-top: 10px;
+    margin-left:20%;
+    background-color: #3da4c2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress-point{
+    height: 20px;
+    width: 20px;
+    margin-left:20%;
+    background-color: #3da4c2;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+}
+.now-time{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.end-time{
+    position: absolute;
+    top: 0;
+    right: 0; ,
+}
+.audio{
+    height: 68px;
+    width: 68px;
+    margin: 30px auto;
+    background: url("../img/details_play.png");
+    background-size: cover;
+}
+.audio-prev{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    background: url("../img/details_prev.png");
+    background-size: cover;
+}
+.audio-next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: url("../img/details_next.png");
+    background-size: cover;
+}
+
+/*歌手头像旋转*/
+.rotate{
+    -webkit-animation: spin 3s linear 2s 5 alternate;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
